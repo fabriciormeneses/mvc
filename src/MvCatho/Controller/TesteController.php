@@ -1,8 +1,8 @@
 <?php
+namespace MvCatho\Controller;
+use MvCatho\System\ControllerAbstract;
+use MvCatho\Model\Pessoas;
 
-/**
- *  
- */
 class TesteController extends ControllerAbstract
 {
     

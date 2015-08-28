@@ -8,7 +8,16 @@
  
 ini_set('display_error', 1);
 ini_set('display_startup_erros', 1);
+error_reporting(E_ALL);
 
+require_once "vendor/autoload.php";
+
+$application = new MvCatho\System\CathoCore();
+
+$application->run();
+
+
+/*
 list($controller, $action) = explode('/', $_GET['key']);
 
 require_once "ControllerAbstract.php";
@@ -24,3 +33,4 @@ spl_autoload_register(function($class){
 $controller = ucfirst($controller)."Controller";
 $control = new $controller();
 $control->{$action}();
+*/
