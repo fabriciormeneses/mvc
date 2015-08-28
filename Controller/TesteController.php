@@ -8,7 +8,9 @@ class TesteController extends ControllerAbstract
     
     public function comprimentar()
     {
-        $this->view('comprimentar');
+        $model = new Pessoas();
+        $dados = $model->getPessoasPorCargo("arquiteto");
+        $this->view('comprimentar', $dados);
     }
     
 }
