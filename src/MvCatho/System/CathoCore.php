@@ -8,7 +8,8 @@ class CathoCore
     protected $_controller;
     protected $_action;
     
-    public function __construct(){
+    public function __construct()
+    {
         $this->getUrlFromServer();
         $this->setExplode();
         $this->setController();
